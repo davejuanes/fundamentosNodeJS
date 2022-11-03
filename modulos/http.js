@@ -1,4 +1,4 @@
-const { write } = require('fs');
+// const { write } = require('fs');
 const http = require('http')
 
 http.createServer(router).listen(3000)
@@ -9,7 +9,8 @@ function router(req, res) {
 
     switch (req.url) {
         case '/hola':
-            res.write('Hola, que tal')
+            let saludo = hola()
+            res.write(saludo)
             res.end();
             break;
     
@@ -25,6 +26,10 @@ function router(req, res) {
     // res.write('Hola, ya se usar http de NodeJS')
 
     // res.end()
+}
+
+function hola() {
+    return 'Hola que tal'
 }
 
 console.log("Escuchando http en el puerto 3000");
