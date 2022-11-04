@@ -1,19 +1,16 @@
 {
-  "name": "automatizacion",
+  "name": "electron",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "electron .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp",
-    "build": "gulp build",
-    "serve": "gulp serve"
   },
   "keywords": [],
-  "author": "",
+  "author": "David Mercado Juanes <dmjuanes_@hotmail.es>",
   "license": "ISC",
   "dependencies": {
-    "gulp": "^4.0.2",
-    "gulp-server-livereload": "^1.9.2"
+    "electron": "^21.2.2"
   }
 }

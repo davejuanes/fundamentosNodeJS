@@ -11,5 +11,7 @@ gulp.task('serve', function(cb) {
         .pipe(server({
             livereload: true,
             open: true,
-        }))
+        }));
 })
+
+gulp.task('default', gulp.series('build', 'serve'))
